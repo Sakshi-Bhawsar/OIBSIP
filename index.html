@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convert website</title>
+    <link rel="stylesheet" href="tem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Crimson+Text:ital,wght@1,600&family=Fira+Sans:wght@800&family=Lobster&family=Monoton&family=Noto+Serif:ital@1&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <form id="tempCalc" onsubmit="calculateTemp(); return false">
+       <label for="temp">Please enter the Temperature you like to convert.</label>
+       <br/><input type="number" name="temp" id="temp" value="0">
+
+       <select name="temp_diff" id="temp_diff">
+        <option value="cel">°celsius</option>
+        <option value="fah">°fahrenheit</option>
+       </select> <br/>
+       <input class="btn" type="submit" name="temp" id="submit"><br/>
+       <span id="result"></span>
+    </form>
+    <script src="tem.js"></script>
+</body>
+</html>
